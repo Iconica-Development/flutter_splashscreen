@@ -2,16 +2,8 @@
 
 Short description of what your package is, why you created it. What issues it fixes and how it works. Also mention the available platforms
 
-## Setup
 
-What setup steps are neccesarry and why>
 
-<details>
-<summary>PLATFORM</summary>
-    
-specific platform steps
-
-</details>
 
 ## How to use
 
@@ -19,6 +11,21 @@ How can we use the package descibe the most common ways with examples in
 ```dart
  codeblocks
 ``` 
+
+## Setup a native splashscreen
+This package doesn´t add a native splashscreen to your app. If you want to add one you can use the [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
+
+Add it to the project with:
+```bash
+flutter pub add flutter_native_splash
+```
+
+run the following command in the terminal
+```bash
+flutter pub run flutter_native_splash:create
+```
+
+For a full guide on the underlying native splashscreen, see [here](https://pub.dev/packages/flutter_native_splash)
 
 ## Issues
 

@@ -29,6 +29,8 @@ migrate_working_dir/
 .packages
 build/
 
+.flutter-plugins
+.flutter-plugins-dependencies
 example/android/
 example/ios/
 example/macos/
