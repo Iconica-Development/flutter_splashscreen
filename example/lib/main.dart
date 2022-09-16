@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_splashscreen/flutter_splashscreen.dart';
 
 void main() {
   runApp(const MaterialApp(home: FlutterSplashscreenDemo()));
@@ -9,6 +10,13 @@ class FlutterSplashscreenDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text('FlutterSplashscreenDemo'));
+    return Scaffold(
+      body: SplashScreen(
+        backgroundColor: Colors.amber,
+        onComplete: () {
+          debugPrint('Splashscreen completed');
+        },
+      ),
+    );
   }
 }
